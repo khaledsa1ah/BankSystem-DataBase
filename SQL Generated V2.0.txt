@@ -1,0 +1,81 @@
+CREATE TABLE Bank
+(
+  Name INT NOT NULL,
+  Code INT NOT NULL,
+  Address INT NOT NULL,
+  PRIMARY KEY (Name)
+);
+
+CREATE TABLE Branch
+(
+  Address INT NOT NULL,
+  Bnumber INT NOT NULL,
+  Name INT NOT NULL,
+  PRIMARY KEY (Bnumber),
+  FOREIGN KEY (Name) REFERENCES Bank(Name)
+);
+
+CREATE TABLE Customer
+(
+  SNN INT NOT NULL,
+  Name INT NOT NULL,
+  Address INT NOT NULL,
+  PRIMARY KEY (SNN)
+);
+
+CREATE TABLE Account
+(
+  AccNumber INT NOT NULL,
+  Balance INT NOT NULL,
+  Type INT NOT NULL,
+  SNN INT NOT NULL,
+  PRIMARY KEY (AccNumber),
+  FOREIGN KEY (SNN) REFERENCES Customer(SNN)
+);
+
+CREATE TABLE Loan
+(
+  Lnumber INT NOT NULL,
+  Type INT NOT NULL,
+  Amount INT NOT NULL,
+  SNN INT NOT NULL,
+  Bnumber INT NOT NULL,
+  PRIMARY KEY (Lnumber),
+  FOREIGN KEY (SNN) REFERENCES Customer(SNN),
+  FOREIGN KEY (Bnumber) REFERENCES Branch(Bnumber)
+);
+
+CREATE TABLE Employee
+(
+  Name INT NOT NULL,
+  SNN INT NOT NULL,
+  Address INT NOT NULL,
+  Bnumber INT NOT NULL,
+  PRIMARY KEY (SNN),
+  FOREIGN KEY (Bnumber) REFERENCES Branch(Bnumber)
+);
+
+CREATE TABLE has
+(
+  Bnumber INT NOT NULL,
+  SNN INT NOT NULL,
+  PRIMARY KEY (Bnumber, SNN),
+  FOREIGN KEY (Bnumber) REFERENCES Branch(Bnumber),
+  FOREIGN KEY (SNN) REFERENCES Customer(SNN)
+);
+
+CREATE TABLE Customer_Phone
+(
+  Phone INT NOT NULL,
+  SNN INT NOT NULL,
+  PRIMARY KEY (Phone, SNN),
+  FOREIGN KEY (SNN) REFERENCES Customer(SNN)
+);
+
+CREATE TABLE Employee_Phone
+(
+  Phone INT NOT NULL,
+  SNN INT NOT NULL,
+  PRIMARY KEY (Phone, SNN),
+  FOREIGN KEY (SNN) REFERENCES Employee(SNN)
+);
