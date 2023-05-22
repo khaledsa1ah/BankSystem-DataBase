@@ -43,7 +43,7 @@
             // homePage1
             // 
             homePage1.BackColor = SystemColors.Window;
-            homePage1.Location = new Point(-11, -4);
+            homePage1.Location = new Point(-7, -31);
             homePage1.Margin = new Padding(0);
             homePage1.Name = "homePage1";
             homePage1.Size = new Size(800, 800);

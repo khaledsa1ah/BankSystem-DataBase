@@ -37,6 +37,7 @@
             LoginBtn = new Button();
             groupBox1 = new GroupBox();
             ErrorLabel = new Label();
+            adminHome1 = new AdminHome();
             label3 = new Label();
             pictureBox1 = new PictureBox();
             register1 = new Register();
@@ -140,6 +141,13 @@
             ErrorLabel.TabIndex = 18;
             ErrorLabel.Click += label4_Click;
             // 
+            // adminHome1
+            // 
+            adminHome1.Location = new Point(0, 0);
+            adminHome1.Name = "adminHome1";
+            adminHome1.Size = new Size(800, 800);
+            adminHome1.TabIndex = 19;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -176,6 +184,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
+            Controls.Add(adminHome1);
             Controls.Add(register1);
             Controls.Add(groupBox1);
             Controls.Add(label3);
@@ -203,5 +212,6 @@
         private PictureBox pictureBox1;
         private Label ErrorLabel;
         private Register register1;
+        private AdminHome adminHome1;
     }
 }

@@ -102,3 +102,4 @@ C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Deb
 C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.pdb
 C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.genruntimeconfig.cache
 C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\ref\BankSystem.dll
+C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.AdminHome.resources
