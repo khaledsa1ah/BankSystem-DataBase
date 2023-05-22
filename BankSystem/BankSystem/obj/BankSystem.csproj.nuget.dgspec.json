@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\over-\\source\\repos\\BankSystem\\BankSystem\\BankSystem.csproj": {}
+    "C:\\Users\\Administrator\\OneDrive\\Desktop\\a7a\\BankSystem\\BankSystem\\BankSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\over-\\source\\repos\\BankSystem\\BankSystem\\BankSystem.csproj": {
+    "C:\\Users\\Administrator\\OneDrive\\Desktop\\a7a\\BankSystem\\BankSystem\\BankSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\over-\\source\\repos\\BankSystem\\BankSystem\\BankSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\OneDrive\\Desktop\\a7a\\BankSystem\\BankSystem\\BankSystem.csproj",
         "projectName": "BankSystem",
-        "projectPath": "C:\\Users\\over-\\source\\repos\\BankSystem\\BankSystem\\BankSystem.csproj",
-        "packagesPath": "C:\\Users\\over-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\over-\\source\\repos\\BankSystem\\BankSystem\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\OneDrive\\Desktop\\a7a\\BankSystem\\BankSystem\\BankSystem.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\OneDrive\\Desktop\\a7a\\BankSystem\\BankSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\over-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

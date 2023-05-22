@@ -7,5 +7,8 @@
     <Compile Update="HomePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Register.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

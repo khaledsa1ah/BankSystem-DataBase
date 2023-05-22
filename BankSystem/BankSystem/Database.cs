@@ -14,7 +14,7 @@ namespace BankSystem
 
         public Database()
         {
-            myConnection = new SQLiteConnection("Data Source=C:\\Users\\over-\\source\\repos\\BankSystem\\BankSystem\\database.sqlite3");
+            myConnection = new SQLiteConnection("Data Source=database.sqlite3");
         }
 
         public void OpenConnection()
