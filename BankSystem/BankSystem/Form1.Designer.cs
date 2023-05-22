@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
-            register2 = new Register();
+            homePage1 = new HomePage();
             SuspendLayout();
             // 
             // entityCommand1
@@ -40,13 +40,14 @@
             entityCommand1.EnablePlanCaching = true;
             entityCommand1.Transaction = null;
             // 
-            // register2
+            // homePage1
             // 
-            register2.BackColor = Color.White;
-            register2.Location = new Point(26, 0);
-            register2.Name = "register2";
-            register2.Size = new Size(723, 672);
-            register2.TabIndex = 0;
+            homePage1.BackColor = SystemColors.Window;
+            homePage1.Location = new Point(-11, -4);
+            homePage1.Margin = new Padding(0);
+            homePage1.Name = "homePage1";
+            homePage1.Size = new Size(800, 800);
+            homePage1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -54,7 +55,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(784, 761);
-            Controls.Add(register2);
+            Controls.Add(homePage1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Form1";
             Text = "Form1";
@@ -66,6 +67,6 @@
 
         private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
         private Register register1;
-        private Register register2;
+        private HomePage homePage1;
     }
 }

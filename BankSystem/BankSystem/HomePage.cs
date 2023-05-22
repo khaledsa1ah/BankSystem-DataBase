@@ -17,6 +17,7 @@ namespace BankSystem
         public HomePage()
         {
             InitializeComponent();
+            register1.Hide();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace BankSystem
 
                     if (snn == SNNBox.Text)
                     {
-                        if(password != PasswordBox.Text)
+                        if (password != PasswordBox.Text)
                         {
                             ErrorLabel.Text = "The Password isn't correct";
                         }
@@ -65,6 +66,16 @@ namespace BankSystem
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegisterBtn_Click(object sender, EventArgs e)
+        {
+            register1.Show();
+        }
+
+        private void register1_Load(object sender, EventArgs e)
         {
 
         }

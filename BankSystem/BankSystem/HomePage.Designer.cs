@@ -36,9 +36,10 @@
             RegisterBtn = new Button();
             LoginBtn = new Button();
             groupBox1 = new GroupBox();
+            ErrorLabel = new Label();
             label3 = new Label();
             pictureBox1 = new PictureBox();
-            ErrorLabel = new Label();
+            register1 = new Register();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -94,6 +95,7 @@
             RegisterBtn.TabIndex = 10;
             RegisterBtn.Text = "Register";
             RegisterBtn.UseVisualStyleBackColor = true;
+            RegisterBtn.Click += RegisterBtn_Click;
             // 
             // LoginBtn
             // 
@@ -127,6 +129,17 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Login";
             // 
+            // ErrorLabel
+            // 
+            ErrorLabel.AutoSize = true;
+            ErrorLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            ErrorLabel.ForeColor = Color.Red;
+            ErrorLabel.Location = new Point(22, 239);
+            ErrorLabel.Name = "ErrorLabel";
+            ErrorLabel.Size = new Size(0, 17);
+            ErrorLabel.TabIndex = 18;
+            ErrorLabel.Click += label4_Click;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -149,22 +162,21 @@
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
             // 
-            // ErrorLabel
+            // register1
             // 
-            ErrorLabel.AutoSize = true;
-            ErrorLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            ErrorLabel.ForeColor = Color.Red;
-            ErrorLabel.Location = new Point(22, 239);
-            ErrorLabel.Name = "ErrorLabel";
-            ErrorLabel.Size = new Size(0, 17);
-            ErrorLabel.TabIndex = 18;
-            ErrorLabel.Click += label4_Click;
+            register1.BackColor = Color.White;
+            register1.Location = new Point(0, 0);
+            register1.Name = "register1";
+            register1.Size = new Size(800, 800);
+            register1.TabIndex = 18;
+            register1.Load += register1_Load;
             // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
+            Controls.Add(register1);
             Controls.Add(groupBox1);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
@@ -190,5 +202,6 @@
         private Label label3;
         private PictureBox pictureBox1;
         private Label ErrorLabel;
+        private Register register1;
     }
 }
