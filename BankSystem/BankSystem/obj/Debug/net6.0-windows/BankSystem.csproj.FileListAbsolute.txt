@@ -103,3 +103,42 @@ C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Deb
 C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.genruntimeconfig.cache
 C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\ref\BankSystem.dll
 C:\Users\over-\Github projects\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.AdminHome.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\BankSystem.exe
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\BankSystem.deps.json
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\BankSystem.runtimeconfig.json
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\BankSystem.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\BankSystem.pdb
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\EntityFramework.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.csproj.AssemblyReference.cache
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.AdminHome.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.Form1.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.HomePage.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.Properties.Resources.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.Register.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.csproj.GenerateResource.cache
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.AssemblyInfoInputs.cache
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.AssemblyInfo.cs
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.csproj.CoreCompileInputs.cache
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.csproj.CopyComplete
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\refint\BankSystem.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.pdb
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.genruntimeconfig.cache
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\ref\BankSystem.dll
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.AddBank.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.Add_Branch.resources
+C:\Users\user\.vscode\BankSystem-DataBase\BankSystem\BankSystem\obj\Debug\net6.0-windows\BankSystem.BankData.resources

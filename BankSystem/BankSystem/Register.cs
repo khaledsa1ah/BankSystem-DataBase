@@ -100,5 +100,10 @@ namespace BankSystem
         {
 
         }
+
+        private void NameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

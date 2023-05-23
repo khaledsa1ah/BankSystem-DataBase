@@ -53,6 +53,7 @@
             NameBox.Name = "NameBox";
             NameBox.Size = new Size(398, 35);
             NameBox.TabIndex = 0;
+            NameBox.TextChanged += NameBox_TextChanged;
             // 
             // SNNBox
             // 
@@ -157,7 +158,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.Tomato;
-            label6.Location = new Point(329, 76);
+            label6.Location = new Point(329, 77);
             label6.Name = "label6";
             label6.Size = new Size(166, 32);
             label6.TabIndex = 11;
