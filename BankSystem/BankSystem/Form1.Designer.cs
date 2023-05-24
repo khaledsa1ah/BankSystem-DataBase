@@ -1,6 +1,6 @@
 ﻿namespace BankSystem
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
-            homePage1 = new HomePage();
             SuspendLayout();
             // 
             // entityCommand1
@@ -40,25 +39,15 @@
             entityCommand1.EnablePlanCaching = true;
             entityCommand1.Transaction = null;
             // 
-            // homePage1
-            // 
-            homePage1.BackColor = SystemColors.Window;
-            homePage1.Location = new Point(-3, -2);
-            homePage1.Margin = new Padding(0);
-            homePage1.Name = "homePage1";
-            homePage1.Size = new Size(800, 800);
-            homePage1.TabIndex = 0;
-            // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(784, 761);
-            Controls.Add(homePage1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "Form1";
-            Text = "Form1";
+            Name = "MainForm";
+            Text = "Bank System";
             Load += Form1_Load;
             ResumeLayout(false);
         }
@@ -67,6 +56,5 @@
 
         private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
         private Register register1;
-        private HomePage homePage1;
     }
 }

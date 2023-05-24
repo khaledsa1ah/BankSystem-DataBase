@@ -1,10 +1,11 @@
 namespace BankSystem
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+            this.Controls.Add(new HomePage());
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,6 +24,11 @@ namespace BankSystem
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void homePage1_Load(object sender, EventArgs e)
         {
 
         }

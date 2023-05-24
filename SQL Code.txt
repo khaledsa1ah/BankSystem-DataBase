@@ -1,0 +1,55 @@
+CREATE TABLE "Account" (
+	"AccNumber"	INTEGER NOT NULL,
+	"Balance"	NUMERIC NOT NULL,
+	"Type"	TEXT NOT NULL,
+	"SSN"	TEXT NOT NULL,
+	PRIMARY KEY("AccNumber" AUTOINCREMENT)
+);
+CREATE TABLE "Bank" (
+	"Name"	TEXT NOT NULL,
+	"Code"	TEXT NOT NULL,
+	"Address"	TEXT NOT NULL,
+	PRIMARY KEY("Name")
+);
+CREATE TABLE "Branch" (
+	"Address"	TEXT NOT NULL,
+	"Bnumber"	INTEGER NOT NULL,
+	"Name"	TEXT NOT NULL,
+	PRIMARY KEY("Bnumber" AUTOINCREMENT),
+	FOREIGN KEY("Name") REFERENCES "Bank"("Name") ON DELETE CASCADE
+);
+CREATE TABLE "Loan" (
+	"Amount"	NUMERIC NOT NULL,
+	"Lnumber"	INTEGER NOT NULL,
+	"EmpSSN"	TEXT,
+	"SSN"	TEXT NOT NULL,
+	"Type"	TEXT NOT NULL,
+	"Status"	TEXT NOT NULL,
+	PRIMARY KEY("Lnumber" AUTOINCREMENT),
+	FOREIGN KEY("SSN") REFERENCES "User"("SSN")
+);
+CREATE TABLE "LoanType" (
+	"Type"	TEXT NOT NULL,
+	"Bnumber"	TEXT NOT NULL,
+	PRIMARY KEY("Type")
+);
+CREATE TABLE "User" (
+	"SSN"	TEXT NOT NULL,
+	"Name"	TEXT NOT NULL,
+	"Address"	TEXT NOT NULL,
+	"Type"	TEXT NOT NULL,
+	"Bnumber"	TEXT NOT NULL,
+	"Password"	TEXT NOT NULL,
+	PRIMARY KEY("SSN"),
+	FOREIGN KEY("Bnumber") REFERENCES "Branch"("Bnumber") ON DELETE CASCADE
+);
+CREATE TABLE "User_Phone" (
+	"Phone"	TEXT NOT NULL,
+	"SSN"	TEXT NOT NULL,
+	PRIMARY KEY("Phone","SSN"),
+	FOREIGN KEY("SSN") REFERENCES "User"("SSN")
+);
+CREATE TABLE "sqlite_sequence" (
+	"name"	,
+	"seq"	
+);

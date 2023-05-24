@@ -44,7 +44,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(130, 309);
+            label2.Location = new Point(312, 293);
             label2.Name = "label2";
             label2.Size = new Size(52, 21);
             label2.TabIndex = 5;
@@ -55,7 +55,7 @@
             button1.BackColor = Color.Tomato;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(221, 535);
+            button1.Location = new Point(444, 540);
             button1.Name = "button1";
             button1.Size = new Size(141, 41);
             button1.TabIndex = 0;
@@ -66,7 +66,7 @@
             // NameBox
             // 
             NameBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            NameBox.Location = new Point(130, 333);
+            NameBox.Location = new Point(312, 317);
             NameBox.Name = "NameBox";
             NameBox.Size = new Size(398, 29);
             NameBox.TabIndex = 1;
@@ -74,7 +74,7 @@
             // CodeBox
             // 
             CodeBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            CodeBox.Location = new Point(130, 407);
+            CodeBox.Location = new Point(312, 397);
             CodeBox.Name = "CodeBox";
             CodeBox.Size = new Size(398, 29);
             CodeBox.TabIndex = 2;
@@ -83,7 +83,7 @@
             // AddressBox
             // 
             AddressBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            AddressBox.Location = new Point(130, 470);
+            AddressBox.Location = new Point(312, 470);
             AddressBox.Name = "AddressBox";
             AddressBox.Size = new Size(398, 29);
             AddressBox.TabIndex = 3;
@@ -92,7 +92,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(221, 260);
+            label1.Location = new Point(422, 244);
             label1.Name = "label1";
             label1.Size = new Size(182, 32);
             label1.TabIndex = 4;
@@ -102,7 +102,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(130, 383);
+            label3.Location = new Point(312, 373);
             label3.Name = "label3";
             label3.Size = new Size(46, 21);
             label3.TabIndex = 6;
@@ -112,7 +112,7 @@
             // 
             NameError.AutoSize = true;
             NameError.ForeColor = Color.Red;
-            NameError.Location = new Point(130, 365);
+            NameError.Location = new Point(312, 349);
             NameError.Name = "NameError";
             NameError.Size = new Size(0, 15);
             NameError.TabIndex = 7;
@@ -121,7 +121,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(130, 446);
+            label5.Location = new Point(312, 446);
             label5.Name = "label5";
             label5.Size = new Size(66, 21);
             label5.TabIndex = 8;
@@ -142,6 +142,7 @@
             Controls.Add(button1);
             Name = "AddBank";
             Size = new Size(800, 800);
+            Load += AddBank_Load;
             ResumeLayout(false);
             PerformLayout();
         }

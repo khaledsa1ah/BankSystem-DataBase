@@ -4,7 +4,13 @@
     <Compile Update="Add Branch.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="AddAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="AddBank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AdminAddUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="AdminHome.cs">
@@ -13,19 +19,58 @@
     <Compile Update="BankData.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="BranchData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomerHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EmployeeAddCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EmployeeHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="HomePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="LoanData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LoanEmployeeOperations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="LoanOperations.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoanRequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LoanTypesView.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ManageLoans.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Register.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UpdateUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

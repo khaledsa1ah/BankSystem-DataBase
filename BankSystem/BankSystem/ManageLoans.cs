@@ -88,5 +88,15 @@ namespace BankSystem
             database.CloseConnection();
 
         }
+
+        private void LoanDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ManageLoans_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,23 +43,12 @@ namespace BankSystem
             adapter.Fill(dt);
             BankDataGrid.DataSource = dt;
 
-
-            //-------------------Branch------------------------------ 
-
-
-            // Create a new SQLite command
-            string query2 = "SELECT * FROM Branch";
-            SQLiteCommand cmd2 = new SQLiteCommand(query2, databaseObject.myConnection);
-
-
-            SQLiteDataAdapter adapter2 = new SQLiteDataAdapter();
-            adapter2.SelectCommand = cmd2;
-            DataTable dt2 = new DataTable();
-            adapter2.Fill(dt2);
-            BranchDataGrid.DataSource = dt2;
-
-
             databaseObject.CloseConnection();
+
+        }
+
+        private void BankData_Load(object sender, EventArgs e)
+        {
 
         }
     }

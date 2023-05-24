@@ -23,13 +23,15 @@ namespace BankSystem
 
             Database databaseObject = new Database();
 
+            databaseObject.OpenConnection();
+
+            NameError.Text = "";
 
             // Create a new SQLite command
             string query = "INSERT INTO Bank(Name, Code, Address) VALUES (@name, @code, @address)";
             SQLiteCommand myCommand = new SQLiteCommand(query, databaseObject.myConnection);
 
 
-            databaseObject.OpenConnection();
             // Retrieve values from the input fields
             string name = NameBox.Text;
             string code = CodeBox.Text;
@@ -37,24 +39,22 @@ namespace BankSystem
 
             //Checking if the name and code was entered before or not
 
-            string query2 = "SELECT Name FROM Bank";
+            string query2 = "SELECT Name FROM Bank WHERE Name = @name";
 
             SQLiteCommand myCommand2 = new SQLiteCommand(query2, databaseObject.myConnection);
 
-
+            myCommand2.Parameters.AddWithValue("@name", name);
             SQLiteDataReader reader = myCommand2.ExecuteReader();
+
 
             if (reader.HasRows)
             {
-                while (reader.Read())
-                {
-                    if (name == reader["Name"].ToString())
-                    {
-                        // Show Error Message for Name
-                        NameError.Text = "You have entered this bank before";
-                        return;
-                    }
-                }
+                // Show Error Message for Name
+                NameError.Text = "You have entered this bank before";
+                reader.Close();
+                databaseObject.CloseConnection();
+                return;
+
             }
 
 
@@ -66,7 +66,7 @@ namespace BankSystem
 
             // Execute the query
             myCommand.ExecuteNonQuery();
-
+            reader.Close();
 
             // Close the connection
             databaseObject.CloseConnection();
@@ -74,10 +74,16 @@ namespace BankSystem
             NameBox.Text = "";
             CodeBox.Text = "";
             AddressBox.Text = "";
+            MessageBox.Show("Bank has been added successfully!");
 
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddBank_Load(object sender, EventArgs e)
         {
 
         }

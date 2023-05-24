@@ -86,7 +86,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Tomato;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(211, 141);
             label1.Name = "label1";
             label1.Size = new Size(53, 21);
@@ -98,19 +98,19 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Tomato;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(212, 210);
             label2.Name = "label2";
-            label2.Size = new Size(43, 21);
+            label2.Size = new Size(40, 21);
             label2.TabIndex = 6;
-            label2.Text = "SNN";
+            label2.Text = "SSN";
             label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Tomato;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(211, 281);
             label3.Name = "label3";
             label3.Size = new Size(79, 21);
@@ -121,7 +121,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.Tomato;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(212, 348);
             label4.Name = "label4";
             label4.Size = new Size(70, 21);
@@ -132,7 +132,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.Tomato;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(211, 420);
             label5.Name = "label5";
             label5.Size = new Size(116, 21);
@@ -157,7 +157,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.Tomato;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(329, 77);
             label6.Name = "label6";
             label6.Size = new Size(166, 32);
@@ -189,7 +189,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.Tomato;
+            label7.ForeColor = Color.Black;
             label7.Location = new Point(211, 498);
             label7.Name = "label7";
             label7.Size = new Size(109, 21);
@@ -228,6 +228,7 @@
             Controls.Add(NameBox);
             Name = "Register";
             Size = new Size(800, 800);
+            Load += Register_Load;
             ResumeLayout(false);
             PerformLayout();
         }

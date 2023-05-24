@@ -37,10 +37,8 @@
             LoginBtn = new Button();
             groupBox1 = new GroupBox();
             ErrorLabel = new Label();
-            adminHome1 = new AdminHome();
             label3 = new Label();
             pictureBox1 = new PictureBox();
-            register1 = new Register();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -141,13 +139,6 @@
             ErrorLabel.TabIndex = 18;
             ErrorLabel.Click += label4_Click;
             // 
-            // adminHome1
-            // 
-            adminHome1.Location = new Point(0, 0);
-            adminHome1.Name = "adminHome1";
-            adminHome1.Size = new Size(800, 800);
-            adminHome1.TabIndex = 19;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -170,28 +161,18 @@
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
             // 
-            // register1
-            // 
-            register1.BackColor = Color.White;
-            register1.Location = new Point(0, 0);
-            register1.Name = "register1";
-            register1.Size = new Size(800, 800);
-            register1.TabIndex = 18;
-            register1.Load += register1_Load;
-            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            Controls.Add(adminHome1);
-            Controls.Add(register1);
             Controls.Add(groupBox1);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
             Margin = new Padding(0);
             Name = "HomePage";
             Size = new Size(800, 800);
+            Load += HomePage_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -211,7 +192,5 @@
         private Label label3;
         private PictureBox pictureBox1;
         private Label ErrorLabel;
-        private Register register1;
-        private AdminHome adminHome1;
     }
 }

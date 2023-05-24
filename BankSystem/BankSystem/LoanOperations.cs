@@ -72,5 +72,20 @@ namespace BankSystem
 
             databaseObject.CloseConnection();
         }
+
+        private void BranchNumberBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoanTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoanValueTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
