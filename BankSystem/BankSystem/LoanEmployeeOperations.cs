@@ -24,7 +24,7 @@ namespace BankSystem
         {
             Database database = new Database();
             database.OpenConnection();
-            string query = "SELECT * FROM Loan";
+            string query = $"SELECT * FROM Loan JOIN LoanType ON Loan.Type = LoanType.Type WHERE Bnumber = {SessionManager.branchNumber}";
             using (SQLiteCommand command = new SQLiteCommand(query, database.myConnection))
             {
                 SQLiteDataAdapter adapter = new SQLiteDataAdapter(command);

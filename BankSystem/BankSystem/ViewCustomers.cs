@@ -24,7 +24,7 @@ namespace BankSystem
             Database databaseObject = new Database();
 
             // Create a new SQLite command
-            string query = "SELECT SSN, Name, Address, Type, Bnumber as [Branch Number] FROM [User] Where Type = 'Customer'";
+            string query = $"SELECT SSN, Name, Address, Type, Bnumber as [Branch Number] FROM [User] Where Type = 'Customer' AND Bnumber = {SessionManager.branchNumber}";
             SQLiteCommand cmd = new SQLiteCommand(query, databaseObject.myConnection);
 
 

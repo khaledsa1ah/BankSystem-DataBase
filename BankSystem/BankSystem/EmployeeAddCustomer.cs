@@ -37,7 +37,7 @@ namespace BankSystem
             string password = PasswordBox.Text;
             string type = "Customer";
             string address = AddressBox.Text;
-            string bankNumber = BankNumberBox.Text;
+            string bankNumber = SessionManager.branchNumber;
             string phone = PhoneNumberBox.Text;
             // Add parameters to the command
 
@@ -66,9 +66,10 @@ namespace BankSystem
                     }
                 }
             }
-            if (name == null || ssn == null || password == null || address == null || bankNumber == null || phone == null || type == null)
+            if (name == "" || ssn == "" || password == "" || address == "" || bankNumber == "" || phone == "" || type == "")
             {
                 MessageBox.Show("You should fill all empty places.");
+                reader.Close();
                 databaseObject.CloseConnection();
                 return;
 

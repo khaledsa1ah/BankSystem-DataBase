@@ -37,6 +37,14 @@ namespace BankSystem
 
             SQLiteDataReader reader = myCommand.ExecuteReader();
 
+            if (SNNBox.Text == "" || PasswordBox.Text == "")
+            {
+                MessageBox.Show("You should fill all empty places.");
+                databaseObject.CloseConnection();
+                return;
+
+            }
+
             if (reader.HasRows)
             {
                 while (reader.Read())

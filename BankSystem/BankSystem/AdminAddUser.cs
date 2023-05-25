@@ -27,7 +27,7 @@ namespace BankSystem
             string ssn = SNNBox.Text;
             string password = PasswordBox.Text;
             string address = AddressBox.Text;
-            string bankNumber = BankNumberBox.Text;
+            int bankNumber = int.Parse(BankNumberBox.Text);
             string phone = PhoneNumberBox.Text;
             string type = comboBox1.Text;
 
@@ -61,7 +61,7 @@ namespace BankSystem
                     }
                 }
             }
-            if(name == null || ssn == null || password == null || address == null || bankNumber == null || phone == null || type == null)
+            if(name == "" || ssn == "" || password == "" || address == "" || phone == "" || type == "")
             {
                 MessageBox.Show("You should fill all empty places.");
                 reader.Close();

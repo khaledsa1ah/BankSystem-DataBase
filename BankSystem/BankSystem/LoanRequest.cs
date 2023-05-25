@@ -26,10 +26,16 @@ namespace BankSystem
             Database databaseObject = new Database();
 
             string lv = LoanValueTextBox.Text;
+            string ltype = LoanTypeComboBox.Text;
+            if (lv == "" || ltype == "")
+            {
+                MessageBox.Show("You should fill all empty places.");
+                return;
+            }
             double loanValue = Convert.ToDouble(lv);
 
 
-            string ltype = LoanTypeComboBox.Text;
+
             string query = "INSERT INTO Loan (Amount, SSN, Type, Status) VALUES (@Amount, @SSN, @Type, @Status)";
 
             SQLiteCommand myCommand = new SQLiteCommand(query, databaseObject.myConnection);

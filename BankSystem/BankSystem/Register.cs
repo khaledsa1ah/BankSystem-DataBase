@@ -63,9 +63,10 @@ namespace BankSystem
                     }
                 }
             }
-            if (name == null || ssn == null || password == null || address == null || bankNumber == null || phone == null || type == null)
+            if (name == "" || ssn == "" || password == "" || address == "" || bankNumber == "" || phone == "" || type == "")
             {
                 MessageBox.Show("You should fill all empty places.");
+                reader.Close();
                 databaseObject.CloseConnection();
                 return;
 

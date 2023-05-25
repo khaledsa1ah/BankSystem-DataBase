@@ -23,11 +23,11 @@ namespace BankSystem
             Database databaseObject = new Database();
 
             // Create a new SQLite command
-            string query = @"SELECT l2.Lnumber AS [Loan Number], l2.Amount, l2.Type, l2.Status, l2.Name AS [Customer Name], u2.Name AS [Employee Name]
+            string query = $@"SELECT l2.Lnumber AS [Loan Number], l2.Amount, l2.Type, l2.Status, l2.Name AS [Customer Name], u2.Name AS [Employee Name]
                             FROM
                                 (SELECT Lnumber, Amount, EmpSSN, l.Type, l.Status, Name
                                 FROM User u1
-                                JOIN Loan l ON u1.SSN = l.SSN) l2
+                                JOIN Loan l ON u1.SSN = {SessionManager.SSN} AND u1.SSN = l.SSN) l2
                             LEFT JOIN User u2 ON l2.EmpSSN = u2.SSN;
                             ";
 

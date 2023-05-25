@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -56,7 +57,14 @@ namespace BankSystem
                 return;
 
             }
+            if (name == "" || code == "" ||  address == "")
+            {
+                MessageBox.Show("You should fill all empty places.");
+                reader.Close();
+                databaseObject.CloseConnection();
+                return;
 
+            }
 
             // Add parameters to the command
             myCommand.Parameters.AddWithValue("@name", name);

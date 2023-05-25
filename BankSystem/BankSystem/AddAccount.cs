@@ -5,9 +5,12 @@ using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace BankSystem
 {
@@ -44,6 +47,14 @@ namespace BankSystem
             SQLiteCommand myCommand = new SQLiteCommand(query, databaseObject.myConnection);
 
             databaseObject.OpenConnection();
+
+            if (BalanceBox.Text == "" || TypeBox.Text == "")
+            {
+                MessageBox.Show("You should fill all empty places.");
+                databaseObject.CloseConnection();
+                return;
+
+            }
 
             myCommand.Parameters.AddWithValue("@SSN", SessionManager.SSN);
 
