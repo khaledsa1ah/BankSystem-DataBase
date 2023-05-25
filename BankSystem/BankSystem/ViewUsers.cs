@@ -26,7 +26,7 @@ namespace BankSystem
             Database databaseObject = new Database();
 
             // Create a new SQLite command
-            string query = "SELECT SSN, Name, Address, Type, Bnumber as [Branch Number] FROM [User]";
+            string query = "SELECT User.SSN, Name, Address, Type, Bnumber as 'Branch Number', Phone FROM User JOIN User_Phone ON User.SSN = User_Phone.SSN";
             SQLiteCommand cmd = new SQLiteCommand(query, databaseObject.myConnection);
 
 

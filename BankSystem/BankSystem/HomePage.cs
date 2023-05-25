@@ -27,6 +27,23 @@ namespace BankSystem
         private void button1_Click(object sender, EventArgs e)
         {
             ErrorLabel.Text = "";
+            if (SNNBox.Text == "" || PasswordBox.Text == "")
+            {
+                MessageBox.Show("You should fill all empty places.");
+                return;
+
+            }
+            if(SNNBox.Text == "Admin" && PasswordBox.Text == "Admin")
+            {
+                ErrorLabel.Text = "";
+                SNNBox.Text = "";
+                PasswordBox.Text = "";
+                UserControl adminHome = new AdminHome();
+                this.Controls.Add(adminHome);
+                adminHome.BringToFront();
+                return;
+               
+            }
             Database databaseObject = new Database();
 
             string query = "SELECT SSN, Password, Type, Bnumber, Name FROM User";
@@ -37,13 +54,7 @@ namespace BankSystem
 
             SQLiteDataReader reader = myCommand.ExecuteReader();
 
-            if (SNNBox.Text == "" || PasswordBox.Text == "")
-            {
-                MessageBox.Show("You should fill all empty places.");
-                databaseObject.CloseConnection();
-                return;
 
-            }
 
             if (reader.HasRows)
             {
@@ -63,16 +74,7 @@ namespace BankSystem
                             SessionManager.Name = reader["Name"].ToString();
                             SessionManager.branchNumber = reader["Bnumber"].ToString();
                             SessionManager.SSN = reader["SSN"].ToString();
-                            if (type == "Admin")
-                            {
-                                ErrorLabel.Text = "";
-                                SNNBox.Text = "";
-                                PasswordBox.Text = "";
-                                UserControl adminHome = new AdminHome();
-                                this.Controls.Add(adminHome);
-                                adminHome.BringToFront();
-                            }
-                            else if (type == "Employee")
+                            if (type == "Employee")
                             {
                                 ErrorLabel.Text = "";
                                 SNNBox.Text = "";

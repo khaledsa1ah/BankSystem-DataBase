@@ -17,7 +17,6 @@ namespace BankSystem
         public EmployeeAddCustomer()
         {
             InitializeComponent();
-            FillForm();
         }
 
         private void AddBTN_Click(object sender, EventArgs e)
@@ -58,7 +57,6 @@ namespace BankSystem
                         SNNBox.Text = "";
                         PasswordBox.Text = "";
                         AddressBox.Text = "";
-                        BankNumberBox.Text = "";
                         PhoneNumberBox.Text = "";
                         MessageBox.Show("The Customer is alreay available before.");
                         databaseObject.CloseConnection();
@@ -104,44 +102,8 @@ namespace BankSystem
             SNNBox.Text = "";
             PasswordBox.Text = "";
             AddressBox.Text = "";
-            BankNumberBox.Text = "";
             PhoneNumberBox.Text = "";
             MessageBox.Show("Customer has been added successfully!");
-        }
-        private void FillForm()
-        {
-            Database databaseObject = new Database();
-
-
-            string bnum = SessionManager.branchNumber;
-            // Create a new SQLite command
-            string query = $"SELECT Bnumber FROM Branch";
-            databaseObject.OpenConnection();
-
-            SQLiteCommand myCommand = new SQLiteCommand(query, databaseObject.myConnection);
-            SQLiteDataReader reader = myCommand.ExecuteReader();
-
-            List<string> selectedEntries = new List<string>();
-            if (reader.HasRows)
-            {
-                while (reader.Read())
-                {
-                    string entry = reader.GetInt32(0).ToString();
-                    selectedEntries.Add(entry);
-                }
-
-                BankNumberBox.Items.Clear();
-                foreach (string entry in selectedEntries)
-                {
-                    BankNumberBox.Items.Add(entry);
-                }
-            }
-            // Close the connection
-            databaseObject.CloseConnection();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FillForm();
         }
 
         private void EmployeeAddCustomer_Load(object sender, EventArgs e)

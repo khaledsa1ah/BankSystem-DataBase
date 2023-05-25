@@ -199,7 +199,7 @@
             // 
             comboBox1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Admin", "Customer", "Employee" });
+            comboBox1.Items.AddRange(new object[] { "Customer", "Employee" });
             comboBox1.Location = new Point(343, 611);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(397, 33);

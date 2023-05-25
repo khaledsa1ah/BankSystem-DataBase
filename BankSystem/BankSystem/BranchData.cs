@@ -57,6 +57,14 @@ namespace BankSystem
                 SQLiteCommand myCommand = new SQLiteCommand(query, database.myConnection);
                 myCommand.Parameters.AddWithValue("@Bnumber", Bnumber);
                 myCommand.ExecuteNonQuery();
+                query = $"DELETE FROM User_Phone WHERE User_Phone.SSN IN (SELECT User.SSN FROM User WHERE User.Bnumber = {Bnumber});";
+                myCommand = new SQLiteCommand(query, database.myConnection);
+                myCommand.Parameters.AddWithValue("@Bnumber", Bnumber);
+                myCommand.ExecuteNonQuery();
+                query = $"DELETE FROM Account WHERE Account.SSN IN (SELECT User.SSN FROM User WHERE User.Bnumber = {Bnumber});";
+                myCommand = new SQLiteCommand(query, database.myConnection);
+                myCommand.Parameters.AddWithValue("@Bnumber", Bnumber);
+                myCommand.ExecuteNonQuery();
                 query = "DELETE FROM User Where Bnumber = @Bnumber";
                 myCommand = new SQLiteCommand(query, database.myConnection);
                 myCommand.Parameters.AddWithValue("@Bnumber", Bnumber);
